@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>analitikTech | Veri Analisti & Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="navbar container">
+        <h1 class="brand">analitikTech</h1>
+        <ul>
+          <li><a href="#hakkimda">Hakkımda</a></li>
+          <li><a href="#projeler">Projeler</a></li>
+          <li><a href="#yetenekler">Yetenekler</a></li>
+          <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+      </nav>
+
+      <section class="container hero-content">
+        <div>
+          <p class="tag">Veri Analisti & Full Stack Developer</p>
+          <h2>Veriyi ürüne, fikri çözüme dönüştüren portfolyo</h2>
+          <p class="intro">
+            analitikTech; veri odaklı düşünmeyi modern web teknolojileriyle birleştiren,
+            gerçek iş problemlerine çözüm üreten projeleri bir araya getirir.
+          </p>
+          <a class="cta" href="#projeler">Projeleri İncele</a>
+        </div>
+        <div class="stats-card">
+          <h3>Kısa Özgeçmiş</h3>
+          <ul>
+            <li><strong>4+</strong> yıl veri analizi deneyimi</li>
+            <li><strong>12+</strong> uçtan uca web uygulaması</li>
+            <li><strong>%28</strong> ortalama süreç verimliliği artışı</li>
+          </ul>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section id="hakkimda" class="container section">
+        <h3>Hakkımda</h3>
+        <p>
+          SQL, Python ve BI araçlarıyla veri içgörüsü üretirken; React, Node.js ve
+          PostgreSQL ile ölçeklenebilir ürünler geliştiriyorum. Hedefim teknik derinliği,
+          kullanıcı odaklı deneyimle birleştirmek.
+        </p>
+      </section>
+
+      <section id="projeler" class="container section">
+        <div class="section-head">
+          <h3>Örnek Uygulamalar</h3>
+          <select id="projectFilter" aria-label="Proje filtrele">
+            <option value="all">Tümü</option>
+            <option value="data">Veri Analitiği</option>
+            <option value="fullstack">Full Stack</option>
+          </select>
+        </div>
+
+        <div class="projects">
+          <article class="card" data-type="data">
+            <span class="badge">Veri Analitiği</span>
+            <h4>Satış Tahmin Dashboard'u</h4>
+            <p>
+              Python + Prophet ile satış tahmini, Power BI ile karar destek paneli.
+              Stok planlamasında %18 doğruluk artışı sağladı.
+            </p>
+            <a href="#">Detaylar</a>
+          </article>
+
+          <article class="card" data-type="fullstack">
+            <span class="badge">Full Stack</span>
+            <h4>Akıllı Stok Yönetim Sistemi</h4>
+            <p>
+              React, Node.js ve PostgreSQL tabanlı uygulama. Gerçek zamanlı uyarılar ve
+              rol bazlı yetkilendirme içerir.
+            </p>
+            <a href="#">Detaylar</a>
+          </article>
+
+          <article class="card" data-type="data">
+            <span class="badge">Veri Analitiği</span>
+            <h4>Müşteri Segmentasyonu</h4>
+            <p>
+              K-Means ve RFM analizi ile müşteri segmentleri çıkarıldı,
+              kampanya dönüşüm oranı %22 artırıldı.
+            </p>
+            <a href="#">Detaylar</a>
+          </article>
+
+          <article class="card" data-type="fullstack">
+            <span class="badge">Full Stack</span>
+            <h4>İşe Alım Takip Platformu</h4>
+            <p>
+              Next.js + Prisma ile geliştirilen platform; aday takibi, raporlama ve
+              otomatik e-posta akışları sunar.
+            </p>
+            <a href="#">Detaylar</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="yetenekler" class="container section">
+        <h3>Teknik Yetenekler</h3>
+        <div class="skills">
+          <span>Python</span>
+          <span>SQL</span>
+          <span>Power BI</span>
+          <span>Tableau</span>
+          <span>React</span>
+          <span>Node.js</span>
+          <span>TypeScript</span>
+          <span>PostgreSQL</span>
+          <span>Docker</span>
+          <span>AWS</span>
+        </div>
+      </section>
+
+      <section id="iletisim" class="container section contact">
+        <h3>İletişim</h3>
+        <p>Yeni bir proje fikriniz mi var? Birlikte inşa edelim.</p>
+        <form id="contactForm">
+          <input type="text" placeholder="Ad Soyad" required />
+          <input type="email" placeholder="E-posta" required />
+          <textarea rows="4" placeholder="Mesajınız" required></textarea>
+          <button type="submit">Mesaj Gönder</button>
+        </form>
+        <p id="formMessage" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 analitikTech • Veri odaklı dijital çözümler</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
